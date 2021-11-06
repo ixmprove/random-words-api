@@ -8,11 +8,6 @@ const wordlists = {
     nl: require('./data/NL.json'),
 };
 
-// checks for duplicates        =====UNNECEESARY FUNCITON CAN BE REMOVED LATER=======
-function hasDuplicates(array) {
-    return (new Set(array)).size !== array.length;
-}
-
 // get the words out of the wordlist
 function getWords(lang = 'en', amount = 5) {
     amount = amount > 1000 ? 1000 : amount;
