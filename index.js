@@ -1,6 +1,7 @@
 // import & initialize express
 const express = require('express');
 const app = express();
+const host = "0.0.0.0"
 const port = 5000;
 
 // import the wordlists
@@ -86,4 +87,4 @@ app.get('/', (req, res) => {
 });
 
 
-app.listen(process.env.port || port, () => console.log(`Listening on http://localhost:${port}/`));
+app.listen(process.env.port || port, process.env.host || host, () => console.log(`Listening on http://localhost:${port}/`));
