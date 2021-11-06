@@ -1,7 +1,7 @@
 // import & initialize express
 const express = require('express');
 const app = express();
-const port = 8080;
+const port = 5000;
 
 // import the wordlists
 const wordlists = {
