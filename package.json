@@ -1,5 +1,5 @@
 {
-  "name": "random-word-api",
+  "name": "random-words-api",
   "version": "1.0.0",
   "description": "RESTful API to fetch random words.",
   "main": "index.js",
