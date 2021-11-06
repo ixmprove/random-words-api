@@ -3,13 +3,9 @@ const express = require('express');
 const app = express();
 
 // import the wordlists
-const enWorlist = require('./data/EN.json');
-const nlWordlist = require('./data/NL.json');
-
-// an object which makes the wordlists accessable
 const wordlists = {
-    en: enWorlist,
-    nl: nlWordlist,
+    en: require('./data/EN.json'),
+    nl: require('./data/NL.json'),
 };
 
 // checks for duplicates        =====UNNECEESARY FUNCITON CAN BE REMOVED LATER=======
