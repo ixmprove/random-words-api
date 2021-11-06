@@ -13,7 +13,8 @@ https://wordgenerator-api.herokuapp.com/
 - **NL** *- Dutch*
 
 ### How to use:
-https://www.wordgenerator-api.herokuapp.com/api/v1/resources/words?lang=EN&amount=5
+
+https://wordgenerator-api.herokuapp.com/api/v1/resources/words?lang=EN&amount=5
 
 ### There are 2 queries:
 
