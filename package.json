@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "postinstall": "npm run build",
     "start": "node index.js"
   },
   "keywords": [],
