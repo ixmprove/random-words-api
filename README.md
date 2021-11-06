@@ -4,7 +4,6 @@
 
 `$ npm start`
 
-https://wordgenerator-api.herokuapp.com/
 ## Current Languages:
 - **EN** *- English*
 
