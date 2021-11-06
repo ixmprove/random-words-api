@@ -2,7 +2,7 @@
 ## Project Setup
 `$ npm install`
 
-`$ nodemon` or `$ node index.js` or `$ npm start`
+`$ nodemon` or `$ node index.js`
 
 ## Current Languages:
 - **EN** *- English*
