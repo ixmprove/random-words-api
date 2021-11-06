@@ -33,7 +33,7 @@ function getWords(lang = 'en', amount = 5) {
             indexes.push(idx);
 
             // add the word to the word list
-            const word = wordlist[idx].word
+            const word = wordlist[idx]
             if (!words.includes(word)) {
                 words.push(word);
             }
