@@ -35,10 +35,7 @@ function getWords(lang = 'en', amount = 5) {
             // add the word to the word list
             const word = wordlist[idx].word
             if (!words.includes(word)) {
-                words.push({
-                    index: idx,
-                    word: word,
-                });
+                words.push(word);
             }
         }
     }
@@ -49,38 +46,11 @@ function getWords(lang = 'en', amount = 5) {
     };
 }
 
-function findWord(lang = 'en', idx = 0) {
-    idx = parseInt(idx);
-    lang = lang.toLowerCase();
-
-    // does the wordlist exist
-    if (wordlists.hasOwnProperty(lang)) {
-        const wordlist = wordlists[lang];
-        // is the index given inside the wordlist range
-        if ((idx + 1) <= wordlist.length) {
-            return {
-                language: lang.toUpperCase(),
-                index: idx,
-                word: wordlist[idx].word,
-            };
-        }
-    }
-}
-
 app.get('/api/v1/resources/words', (req, res) => {
     const { lang, amount } = req.query;
     res.send(
         { data: getWords(lang, amount) }
     );
-});
-
-
-
-app.get('/api/v1/resources/word', (req, res) => {
-    const { lang, index } = req.query;
-    res.send({
-        data: findWord(lang, index),
-    });
 });
 
 app.get('/', (req, res) => {
