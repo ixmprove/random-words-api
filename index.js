@@ -1,8 +1,8 @@
 // import & initialize express
 const express = require('express');
 const app = express();
-const host = process.env.host || "0.0.0.0";
-const port = process.env.port || 5000;
+const host = "0.0.0.0";
+const port = process.env.PORT || 5000;
 
 // import the wordlists
 const wordlists = {
