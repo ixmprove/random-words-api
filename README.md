@@ -1,4 +1,4 @@
-# Random Word API
+# Random Words API
 ## Project Setup
 1. `$ npm install`
 
