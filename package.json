@@ -1,13 +1,13 @@
 {
-  "name": "words-api",
+  "name": "random-word-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "RESTful API to fetch random words.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "thijsboelman",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1"
