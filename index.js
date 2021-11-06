@@ -89,5 +89,4 @@ app.get('/', (req, res) => {
 
 app.listen(port, host, () => {
     console.log(`Listening on http://${host}:${port}/`)
-    console.log(process.env)
 });
