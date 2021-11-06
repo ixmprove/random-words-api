@@ -6,7 +6,7 @@
 
 ***
 
-https://www.wordgenerator-api.herokuapp.com/
+https://wordgenerator-api.herokuapp.com/
 ## Current Languages:
 - **EN** *- English*
 
