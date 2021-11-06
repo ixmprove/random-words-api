@@ -1,8 +1,8 @@
 # Random Word API
 ## Project Setup
-`$ npm install`
+1. `$ npm install`
 
-`$ nodemon` or `$ node index.js`
+2. `$ nodemon` or `$ node index.js`
 
 ## Current Languages:
 - **EN** *- English*
