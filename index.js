@@ -48,9 +48,7 @@ function getWords(lang = 'en', amount = 5) {
 
 app.get('/api/v1/resources/words', (req, res) => {
     const { lang, amount } = req.query;
-    res.send(
-        { data: getWords(lang, amount) }
-    );
+    res.send(getWords(lang, amount));
 });
 
 app.get('/', (req, res) => {
