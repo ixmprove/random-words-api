@@ -1,8 +1,14 @@
 # Random Words API
-## Project Setup
-1. `$ npm install`
+## Installation
+```
+$ git clone https://github.com/ixmprove/random-words-api.git
 
-2. `$ nodemon` or `$ npm start`
+$ cd random-words-api/
+
+$ npm install
+
+$ npm start
+```
 
 ## Languages:
 - **EN** *- English*
