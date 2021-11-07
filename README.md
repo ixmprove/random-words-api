@@ -9,7 +9,7 @@
 
 - **NL** *- Dutch*
 
-### How to use:
+### Example API call:
 
 https://wordgenerator-api.herokuapp.com/api/v1/resources/words?lang=EN&amount=5
 
