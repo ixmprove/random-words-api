@@ -14,13 +14,7 @@ npm install
 npm start
 ```
 
-## Languages:
-- **EN** *- English*
-
-- **NL** *- Dutch*
-
-- **IT** *- Italian*
-
+## How to use:
 ### Example API call:
 
 `https://wordgenerator-api.herokuapp.com/api/v1/resources/words?lang=EN&amount=5`
@@ -35,6 +29,13 @@ npm start
 - **amount=5** *- the amount of random words. (max. 1000)*
 
 *These are also the default values passed through if there are no querystrings given.*
+
+### Languages
+|Language|Alpha‑2 Code|
+|---|---|
+|English|EN|
+|Dutch|NL|
+|Italian|IT|
 
 ### Example Response:
 ```
