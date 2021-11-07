@@ -22,13 +22,15 @@ $ npm start
 
 ### Example API call:
 
-https://wordgenerator-api.herokuapp.com/api/v1/resources/words?lang=EN&amount=5
+`https://wordgenerator-api.herokuapp.com/api/v1/resources/words?lang=EN&amount=5`
 
 ### There are 2 querystrings:
 
 - **lang=EN** *- to specify the language.*
 
 - **amount=5** *- the amount of random words. (max. 1000)*
+
+*These are also the default querystrings.*
 
 ### Example Response:
 ```
