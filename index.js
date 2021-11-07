@@ -2,21 +2,28 @@
 const express = require('express');
 const app = express();
 
+const fs = require('fs');
+
 const host = "0.0.0.0";
 const port = process.env.PORT || 5000;
 
-// get the data folder content
-const fs = require('fs');
-const files = fs.readdirSync('./data/');
 
-let wordlists = {};
+// load the wordlists inside ./data/
+function loadWordlists() {
+    let wordlists = {}
+    const files = fs.readdirSync('./data/');
 
-// loop over each file & import each json file
-for (file in files) {
-    file = files[file];
-    const language = file.slice(0, 2);
-    wordlists[language] = require(`./data/${file}`);
+    // loop over each file & import each json file
+    for (file in files) {
+        file = files[file];
+        const language = file.slice(0, 2);
+        wordlists[language] = require(`./data/${file}`);
+    }
+    return wordlists;
 }
+
+// define the wordlists
+const wordlists = loadWordlists();
 
 function getWords(lang = 'en', amount = 5) {
     amount = amount > 1000 ? 1000 : amount;
