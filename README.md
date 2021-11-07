@@ -2,7 +2,7 @@
 ## Project Setup
 1. `$ npm install`
 
-2. `$ nodemon` or `$ node index.js`
+2. `$ nodemon` or `$ npm start`
 
 ## Languages:
 - **EN** *- English*
@@ -13,7 +13,7 @@
 
 https://wordgenerator-api.herokuapp.com/api/v1/resources/words?lang=EN&amount=5
 
-### There are 2 queries:
+### There are 2 querystrings:
 
 - **lang=EN** *- to specify the language.*
 
