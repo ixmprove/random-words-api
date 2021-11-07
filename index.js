@@ -5,12 +5,19 @@ const app = express();
 const host = "0.0.0.0";
 const port = process.env.PORT || 5000;
 
-// import the wordlists
-const wordlists = {
-    EN: require('./data/EN.json'),
-    NL: require('./data/NL.json'),
-    IT: require('./data/IT.json')
-};
+// get the data folder content
+const fs = require('fs');
+const files = fs.readdirSync('./data/');
+
+let wordlists = {};
+
+// loop over each file & import each json file
+for (file in files) {
+    file = files[file];
+    const language = file.slice(0, 2);
+    wordlists[language] = require(`./data/${file}`);
+}
+
 
 // get the words out of the wordlist
 function getWords(lang = 'en', amount = 5) {
