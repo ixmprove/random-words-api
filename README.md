@@ -4,7 +4,7 @@
 
 2. `$ nodemon` or `$ node index.js`
 
-## Current Languages:
+## Languages:
 - **EN** *- English*
 
 - **NL** *- Dutch*
