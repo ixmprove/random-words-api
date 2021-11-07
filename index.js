@@ -39,22 +39,13 @@ function getWords(lang = 'en', amount = 5) {
             }
         }
     }
-    return {
-        language: lang.toUpperCase(),
-        amount: words.length,
-        words: words,
-    };
+    return words;
 }
 
 app.get('/api/v1/resources/words', (req, res) => {
     const { lang, amount } = req.query;
     res.send(getWords(lang, amount));
 });
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname + '/index.html'))
-});
-
 
 app.listen(port, host, () => {
     console.log(`Listening on http://${host}:${port}/`)
