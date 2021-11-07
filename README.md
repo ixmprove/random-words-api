@@ -19,7 +19,7 @@ npm start
 
 `https://wordgenerator-api.herokuapp.com/api/v1/resources/words?lang=EN&amount=5`
 
-*This API is beeing hosted on **Heroku (Free)** - I'm not sure how reliable this is.*
+*This API is beeing hosted on **Heroku (Free)***
 
 
 ### There are 2 querystrings:
