@@ -1,7 +1,6 @@
 // import & initialize express
 const express = require('express');
 const app = express();
-const path = require('path');
 const host = "0.0.0.0";
 const port = process.env.PORT || 5000;
 
@@ -9,6 +8,7 @@ const port = process.env.PORT || 5000;
 const wordlists = {
     en: require('./data/EN.json'),
     nl: require('./data/NL.json'),
+    it: require('./data/IT.json')
 };
 
 // get the words out of the wordlist
