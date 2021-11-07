@@ -1,4 +1,7 @@
 # Random Words API
+
+This API returns random words based on the specified language. Associated blog post is [here](https://dev.to/ixmprove/first-restful-api-in-nodejs-word-list-generator-api-1plb)
+
 ## Installation
 ```
 $ git clone https://github.com/ixmprove/random-words-api.git
@@ -14,6 +17,8 @@ $ npm start
 - **EN** *- English*
 
 - **NL** *- Dutch*
+
+- **IT** *- Italian*
 
 ### Example API call:
 

@@ -9,6 +9,7 @@ const port = process.env.PORT || 5000;
 const wordlists = {
     EN: require('./data/EN.json'),
     NL: require('./data/NL.json'),
+    IT: require('./data/IT.json')
 };
 
 // get the words out of the wordlist
