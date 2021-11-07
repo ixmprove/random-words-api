@@ -19,19 +19,17 @@ https://wordgenerator-api.herokuapp.com/api/v1/resources/words?lang=EN&amount=5
 
 - **amount=5** *- the amount of random words. (max. 1000)*
 
-### Example response:
+### Example Response:
 ```
 {
-    "data": {
-        "language": "EN",
-        "amount": 5,
-        "words": [
-            "humanitarian",
-            "furniture",
-            "committees",
-            "surprised",
-            "procedure"
-        ]
-    }
+    "language": "EN",
+    "amount": 5,
+    "words": [
+        "humanitarian",
+        "furniture",
+        "committees",
+        "surprised",
+        "procedure"
+    ]
 }
 ```
