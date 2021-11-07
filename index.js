@@ -18,31 +18,27 @@ for (file in files) {
     wordlists[language] = require(`./data/${file}`);
 }
 
-
-// get the words out of the wordlist
 function getWords(lang = 'en', amount = 5) {
     amount = amount > 1000 ? 1000 : amount;
     lang = lang.toUpperCase();
     let words = [];
-    let indexes = [];
 
     // does the wordlist for the given language exist
     if (wordlists.hasOwnProperty(lang)) {
         const wordlist = wordlists[lang];
         (amount > wordlist.length) ? amount = wordlist.length : amount;
-        for (let i = 0; i < amount; i++) {
-            let idx = Math.floor(Math.random() * wordlist.length)
-            // check for duplicates
-            while (indexes.includes(idx)) {
-                idx = Math.floor(Math.random() * wordlist.length);
-            }
-            indexes.push(idx);
 
-            // add the word to the words array
-            const word = wordlist[idx]
-            if (!words.includes(word)) {
-                words.push(word);
+        // get the words out of the wordlist
+        for (let i = 0; i < amount; i++) {
+            let idx = Math.floor(Math.random() * wordlist.length);
+            let word = wordlist[idx];
+
+            // check for duplicates
+            while (words.includes(word)) {
+                idx = Math.floor(Math.random() * wordlist.length);
+                word = wordlist[idx];
             }
+            words.push(word);
         }
     }
     return words;
