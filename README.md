@@ -30,7 +30,7 @@ $ npm start
 
 - **amount=5** *- the amount of random words. (max. 1000)*
 
-*These are also the default querystrings.*
+*These are also the default values passed through.*
 
 ### Example Response:
 ```
