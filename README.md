@@ -27,15 +27,11 @@ https://wordgenerator-api.herokuapp.com/api/v1/resources/words?lang=EN&amount=5
 
 ### Example Response:
 ```
-{
-    "language": "EN",
-    "amount": 5,
-    "words": [
-        "humanitarian",
-        "furniture",
-        "committees",
-        "surprised",
-        "procedure"
-    ]
-}
+[
+    "humanitarian",
+    "furniture",
+    "committees",
+    "surprised",
+    "procedure"
+]
 ```
